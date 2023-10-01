@@ -1,0 +1,5 @@
+package manageservice
+
+func Register() {
+
+}
