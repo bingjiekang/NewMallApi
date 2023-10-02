@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>商城登录</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+
+<body>
+    <div class="content">
+        <div class="introduce">
+            <div class="introduce-content">
+                <p class="tips animate__animated animate__slideInLeft">
+                    Golang基于gin框架的购物商城项目
+                </p>
+            </div>
+        </div>
+        <div class="form-wrapper animate__animated animate__slideInRight">
+            <div class="login-form">
+                <h1>登录</h1>
+                <div class="form">
+                    <div class="input-wrapper">
+                        <span class="input-tips">用户名</span>
+                        <input type="text" class="ipt" placeholder="请输入用户名">
+                    </div>
+                    <div class="input-wrapper">
+                        <span class="input-tips">密码</span>
+                        <input type="password" class="ipt" placeholder="请输入密码">
+                    </div>
+                    <div class="input-wrapper">
+                        <span class="input-tips">验证码</span>
+                        <input class="ipt" id="captcha" name="captcha" value="" placeholder="请输入验证码" autocomplete="off" required/>
+                        <img src="/v1/captcha" id="imgCode" width="130px" height="48px" class="login-captcha" alt="点击刷新验证码"/>
+                        <input id="idKey" name="idKey" type="hidden" />
+                    </div>
+
+                    <div class="other-setting">
+                        <div class="rem-pwd">
+                            <input type="checkbox">
+                            <span>记住我</span>
+                        </div>
+                        <span class="register">
+                            注册
+                        </span>
+                    </div>
+                    <button class="btn">登陆</button>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
